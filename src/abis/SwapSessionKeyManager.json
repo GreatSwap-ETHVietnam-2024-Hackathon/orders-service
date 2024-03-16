@@ -1,0 +1,327 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_ECDSA_MODULE_ADDRESS",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_WRAPPED_NATIVE_TOKEN",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_FEE_RECIPIENT",
+        "type": "address"
+      },
+      {
+        "internalType": "uint48",
+        "name": "_FEE_RATE",
+        "type": "uint48"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "ECDSA_MODULE_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FEE_RATE",
+    "outputs": [
+      {
+        "internalType": "uint48",
+        "name": "",
+        "type": "uint48"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FEE_RATE_PRECISION",
+    "outputs": [
+      {
+        "internalType": "uint48",
+        "name": "",
+        "type": "uint48"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FEE_RECIPIENT",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WRAPPED_NATIVE_TOKEN",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "getSessionRoot",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_dataHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "isValidSignature",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "merkleRoot",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_FEE_RECIPIENT",
+        "type": "address"
+      }
+    ],
+    "name": "setFeeRecipient",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_merkleRoot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "setMerkleRoot",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "sender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "initCode",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "callData",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256",
+            "name": "callGasLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "verificationGasLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "preVerificationGas",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxFeePerGas",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxPriorityFeePerGas",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "paymasterAndData",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct UserOperation",
+        "name": "userOp",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "userOpHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "validateUserOp",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address payable",
+        "name": "to",
+        "type": "address"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
